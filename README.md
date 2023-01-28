@@ -46,6 +46,7 @@ CREATE TABLE `users` (
     `password` TEXT NOT NULL,
     `created_at` DATETIME DEFAULT CURRENT_TIMESTAMP
     `icon_filename` TEXT DEFAULT NULL
+    `cover_filename` TEXT DEFAULT NULL
 );
 ```
 
