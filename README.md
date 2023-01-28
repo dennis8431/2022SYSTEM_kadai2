@@ -8,7 +8,7 @@
 
 Dockerを起動してください。
 ```
-cd 2022SYSTEM_kadai
+cd 2022SYSTEM_kadai2
 docker compose build
 docker compose up
 ```
