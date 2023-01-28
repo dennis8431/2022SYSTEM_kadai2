@@ -32,6 +32,11 @@ if (isset($_POST['birth'])) {
 
 $date = new DateTime();
 ?>
+
+<!-- スマートフォンでも見やすいデザインに -->
+<link href="./css/responsive.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
 <a href="./index.php">設定一覧に戻る</a>
 
 <h1>名前変更</h1>
