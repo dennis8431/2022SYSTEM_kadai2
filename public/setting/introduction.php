@@ -34,6 +34,10 @@ if (isset($_POST['intro'])) {
 
 ?>
 
+<!-- スマートフォンでも見やすいデザインに -->
+<link href="./css/responsive.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
 <h1>自己紹介文設定/変更</h1>
 
 <div>
