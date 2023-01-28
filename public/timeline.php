@@ -49,6 +49,8 @@ if (isset($_POST['body']) && !empty($_SESSION['login_user_id'])) {
   <a href="/setting/index.php">設定画面</a>
   /
   <a href="/users.php">会員一覧画面</a>
+  /
+  <a href="/profile.php?user_id=<?= htmlspecialchars($user['id']) ?>">プロフィールへ</a>
 </div>
 <!-- フォームのPOST先はこのファイル自身にする -->
 <form method="POST" action="./timeline.php"><!-- enctypeは外しておきましょう -->
