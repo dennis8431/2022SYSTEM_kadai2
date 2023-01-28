@@ -24,6 +24,10 @@ $select_sth->execute([
 ]);
 ?>
 
+<!-- スマートフォンでも見やすいデザインに -->
+<link href="./css/responsive.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
 <h1>フォローしている一覧</h1>
 
 <ul>
