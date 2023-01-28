@@ -29,9 +29,17 @@ CREATE TABLE `bbs_entries` (
     `image_filename` TEXT DEFAULT NULL
 );
 ```
+```
+CREATE TABLE `user_relationships` (
+    `id` INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    `followee_user_id` INT UNSIGNED NOT NULL,
+    `follower_user_id` INT UNSIGNED NOT NULL,
+    `created_at` DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+```
 
 構築は以上となります。
-http://54.209.52.190/bbsimagetest.php にアクセスして，動作を確認してください。
+http://54.159.155.67/login.php にアクセスして，動作を確認してください。
 
 ## 要件達成度
 - [x] 会員登録&ログインした人のみが投稿できるサービスであること
