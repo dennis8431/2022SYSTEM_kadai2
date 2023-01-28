@@ -38,6 +38,10 @@ if (isset($_POST['body']) && !empty($_SESSION['login_user_id'])) {
 }
 ?>
 
+<!-- スマートフォンでも見やすいデザインに -->
+<link href="./css/responsive.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
 <div>
   現在 <?= htmlspecialchars($user['name']) ?> (ID: <?= $user['id'] ?>) さんでログイン中
 </div>
