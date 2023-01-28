@@ -19,6 +19,10 @@ $insert_sth->execute([
 $user = $insert_sth->fetch();
 ?>
 
+<!-- スマートフォンでも見やすいデザインに -->
+<link href="./css/responsive.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
 <h1>ログイン完了</h1>
 
 <p>
