@@ -17,6 +17,10 @@ $select_sth->execute([
 $user = $select_sth->fetch();
 ?>
 
+<!-- スマートフォンでも見やすいデザインに -->
+<link href="./css/responsive.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
 <a href="/timeline.php">タイムラインに戻る</a>
 
 <h1>設定画面</h1>
