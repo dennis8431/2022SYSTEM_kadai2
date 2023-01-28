@@ -52,6 +52,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') { // フォームでPOSTした場合�
 }
 ?>
 
+<!-- スマートフォンでも見やすいデザインに -->
+<link href="./css/responsive.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
 <?php if($insert_result): ?>
 <div>
   <?= htmlspecialchars($followee_user['name']) ?> さんをフォローしました。<br>
