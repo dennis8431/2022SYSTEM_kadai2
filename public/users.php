@@ -55,6 +55,8 @@ if (!empty($_SESSION['login_user_id'])) {
     <a href="/setting/index.php">設定画面</a>
     /
     <a href="/timeline.php">タイムライン</a>
+    /
+    <a href="/profile.php?user_id=<?= htmlspecialchars($_SESSION['login_user_id']) ?>">プロフィールへ</a>
   </div>
   <div style="margin-bottom: 1em;">
     絞り込み<br>
