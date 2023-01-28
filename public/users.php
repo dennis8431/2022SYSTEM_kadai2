@@ -44,6 +44,11 @@ if (!empty($_SESSION['login_user_id'])) {
   ); // array_map で followee_user_id カラムだけ抜き出す
 }
 ?>
+
+<!-- スマートフォンでも見やすいデザインに -->
+<link href="./css/responsive.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
 <body>
   <h1>会員一覧</h1>
   <div style="margin-bottom: 1em;">
