@@ -24,9 +24,10 @@ docker compose exec mysql mysql techc
 ```
 CREATE TABLE `bbs_entries` (
     `id` INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    `user_id` INT UNSIGNED NOT NULL,
     `body` TEXT NOT NULL,
-    `created_at` DATETIME DEFAULT CURRENT_TIMESTAMP,
-    `image_filename` TEXT DEFAULT NULL
+    `image_filename` TEXT DEFAULT NULL,
+    `created_at` DATETIME DEFAULT CURRENT_TIMESTAMP
 );
 ```
 ```
@@ -35,6 +36,16 @@ CREATE TABLE `user_relationships` (
     `followee_user_id` INT UNSIGNED NOT NULL,
     `follower_user_id` INT UNSIGNED NOT NULL,
     `created_at` DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+```
+```
+CREATE TABLE `users` (
+    `id` INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    `name` TEXT NOT NULL,
+    `email` TEXT NOT NULL,
+    `password` TEXT NOT NULL,
+    `created_at` DATETIME DEFAULT CURRENT_TIMESTAMP
+    `icon_filename` TEXT DEFAULT NULL
 );
 ```
 
