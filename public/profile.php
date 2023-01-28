@@ -59,6 +59,10 @@ if (!empty($_SESSION['login_user_id'])) { // ログインしている場合
 <meta name="viewport" content="width=device-width,initial-scale=1">
 
 <a href="/timeline.php">タイムラインに戻る</a>
+/
+<a href="/follower_list.php?user_id=<?= htmlspecialchars($user['id']) ?>">フォロワー</a>
+/
+<a href="/follow_list.php?user_id=<?= htmlspecialchars($user['id']) ?>">フォローしている</a>
 
 <div style="
     width: 100%; height: 25em;
