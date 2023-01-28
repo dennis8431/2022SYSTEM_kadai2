@@ -44,3 +44,4 @@ $select_sth->execute([
   (<?= $relationship['created_at'] ?>にフォロー)
   <?php endforeach; ?>
 </ul>
+<a href="/profile.php?user_id=<?= htmlspecialchars($_SESSION['login_user_id']) ?>">プロフィールへ</a>
